@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column; /* <-- nodrošina vertikālu secību */
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px; /* neliela atstarpe starp elementiem */
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #a89987;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
