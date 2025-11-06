@@ -22,10 +22,10 @@ export default function Counter():JSX.Element{
     const counter = useSelector((state: RootState) => state.counter.value)
     return(
 <div className={style.container}>
-<button type="button" onClick={handlePlus}>Plus + </button>
+<button type="button" onClick={handlePlus} className={style.btn}> + </button>
 {counter}
-<button type="button" onClick={handleMinus}>Minus - </button>
-<button type="button" onClick={handleReset}>Reset</button>
+<button type="button" onClick={handleMinus} className={style.btn}>- </button>
+<button type="button" onClick={handleReset} className={style.btn}>Reset 🔄</button>
 
 </div>
     )
