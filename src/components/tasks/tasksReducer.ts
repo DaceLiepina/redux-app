@@ -5,12 +5,12 @@ import type { Action } from './types/Action';
 
 
 const initialState: TasksState = [
-    {
-        id: uid(),
-        title: 'Изучить React',
-        description: 'Изучить Redux, React, Typescript',
-        isDone: false
-    }
+    // {
+    //     id: uid(),
+    //     title: '',
+    //     description: '',
+    //     isDone: false
+    // }
 ];
 export default function tasksReducer(
     state: TasksState = initialState,
