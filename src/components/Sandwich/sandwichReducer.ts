@@ -1,7 +1,7 @@
 import type { Action } from "./types/Action";
 import type SandwichState from "./types/SandwichState";
 
-
+// Тип этого начального состояния указан как CounterState. kas paradisies pie pirmas uzzimesanas
 const initialState: SandwichState = {
   value: '',
   
@@ -9,7 +9,7 @@ const initialState: SandwichState = {
 
 
 export default function sandwichReducer(
-  
+  //divi argumenti - state un action
   state: SandwichState = initialState,
   action: Action
 ): SandwichState {

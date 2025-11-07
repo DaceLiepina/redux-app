@@ -1,6 +1,7 @@
 import { combineReducers, createStore } from "redux";
 import counterReducer from "./components/counter/counterReducere";
 import sandwichReducer from "./components/Sandwich/sandwichReducer";
+import tasksReducer from "./components/tasks/tasksReducer";
 
 
 
@@ -13,6 +14,7 @@ const store = createStore(combineReducers(
     {
         counter: counterReducer,
         sandwich: sandwichReducer,
+        tasks: tasksReducer,
     }
 ));
 

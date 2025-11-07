@@ -1,5 +1,5 @@
-.container {
-  display: flex;
+.wrapper {
+ display: flex;
   flex-direction: column; /* <-- nodrošina vertikālu secību */
   align-items: center;
   justify-content: flex-start;
@@ -20,7 +20,26 @@
   letter-spacing: 6px;
   color: rgb(70, 65, 65)
 }
-.btn {
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+}
+.group {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+.error {
+  color: #b00020;
+  font-size: 0.85rem;
+}
+.addButton {
   background-color: #516474;
   color: white;
   border: none;

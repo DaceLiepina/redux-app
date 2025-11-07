@@ -4,6 +4,8 @@ import type CounterState from "./types/CounterState";
 // Начальное состояние: Создаётся начальное состояние initialState для счётчика.
 //saakotneejaa veertiiba centraalajam staavoklim
 // initialState имеет свойство value, установленное на 0.
+
+
 // Тип этого начального состояния указан как CounterState.
 const initialState: CounterState = {
   value: 0,
@@ -23,6 +25,7 @@ export default function counterReducer(
   switch (action.type) {
     // case 'counter/plus': Если тип действия равен 'counter/plus',
     // то выполняется сложение значения action.payload к текущему state.value.
+    //...spread operators panjem ieprieksejo veertiibu un pie tas pierekjina klaat
     case "counter/plus":
       return {
         ...state,

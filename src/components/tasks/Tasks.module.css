@@ -1,0 +1,95 @@
+.wrapper {
+ display: flex;
+  flex-direction: column; /* <-- nodrošina vertikālu secību */
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px; /* neliela atstarpe starp elementiem */
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #a89987;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+}
+.title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2b2929;
+}
+.empty {
+  text-align: center;
+  color: #383737;
+  font-style: italic;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.6rem;
+  border-radius: 12px;
+  background: #cac8c8;
+  transition: background 0.3s ease, transform 0.2s ease;
+  color:rgba(15, 14, 14, 0.1)
+}
+
+.item:hover {
+  background: #f2f7ff;
+  transform: translateY(-1px);
+}
+
+.done .titleText {
+  text-decoration: line-through;
+  color: #0f0f0f;
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.titleText {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #222;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.icon {
+  cursor: pointer;
+  color: #555252;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.icon:hover {
+  color: #1d72b8;
+  transform: scale(1.1);
+}
