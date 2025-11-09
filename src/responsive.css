@@ -1,0 +1,187 @@
+/* =========================
+   RESPONSIVE LAYOUT SETTINGS
+   ========================= */
+
+.wrapper,
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #a89987;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* Form un pogas pamata uzstādījumi */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.input,
+textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.btn,
+.addButton {
+  background-color: #516474;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.btn:hover,
+.addButton:hover {
+  background-color: #405360;
+  transform: translateY(-2px);
+}
+
+/* Virsraksti */
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 4px;
+  color: #2b2929;
+}
+
+/* ======================
+   VIDĒJI EKRĀNI (≤900px)
+   ====================== */
+@media (max-width: 900px) {
+  .wrapper,
+  .container {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+}
+
+/* ======================
+   MAZI EKRĀNI (≤600px)
+   ====================== */
+@media (max-width: 600px) {
+  .wrapper,
+  .container {
+    max-width: 95%;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .input,
+  textarea {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+
+  .btn,
+  .addButton {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .actions {
+    align-self: flex-end;
+    gap: 0.4rem;
+  }
+}
+
+/* ======================
+   ĻOTI MAZI EKRĀNI (≤400px)
+   ====================== */
+@media (max-width: 400px) {
+  .wrapper,
+  .container {
+    max-width: 100%;
+    padding: 0.8rem;
+    border-radius: 10px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .input,
+  textarea {
+    font-size: 0.9rem;
+    padding: 6px;
+  }
+
+  .btn,
+  .addButton {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+}
+
+/* ======================
+   ĪPAŠS - TUMŠAIS REŽĪMS
+   ====================== */
+@media (prefers-color-scheme: dark) {
+  .wrapper,
+  .container {
+    background: #8a7f72;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+  }
+
+  .title {
+    color: #f8f8f8;
+  }
+
+  .btn,
+  .addButton {
+    background-color: #6a7a8b;
+  }
+
+  .btn:hover,
+  .addButton:hover {
+    background-color: #7e8ea0;
+  }
+}

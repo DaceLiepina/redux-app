@@ -24,13 +24,13 @@ export default function TaskCreation(): JSX.Element {
   const validationSchema = Yup.object({
     title: Yup.string()
       .trim()
-      .min(3, "Минимум 3 символа")
-      .max(50, "Максимум 50 символов")
-      .required("Введите название задачи"),
+      .min(3, "Minimum 3 characters")
+      .max(50, "Maximum 50 characters")
+      .required("Enter the task name"),
     description: Yup.string()
       .trim()
-      .max(100, "Максимум 100 символов")
-      .required("Введите описание"),
+      .max(100, "Maximum 100 characters")
+      .required("Enter a description"),
   });
 
   // Formik forma

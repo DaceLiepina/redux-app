@@ -1,10 +1,13 @@
+* {
+  box-sizing: border-box;
+}
 .container {
   display: flex;
   flex-direction: column; /* <-- nodrošina vertikālu secību */
   align-items: center;
   justify-content: flex-start;
   gap: 12px; /* neliela atstarpe starp elementiem */
-  max-width: 800px;
+  max-width: 1000px;
   margin: 40px auto;
   padding: 20px;
   background: #a89987;
@@ -48,7 +51,7 @@ p {
 }
 
 .btn {
-  background-color: #516474;
+  background-color: #7c5d72;
   color: white;
   border: none;
   padding: 0.6rem 1.2rem;
@@ -65,4 +68,77 @@ p {
 
 .btn:active {
   transform: translateY(1px);
+}
+
+@media (max-width: 900px) {
+  .wrapper,
+  .container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 16px;
+  }
+}
+
+/* Tālruņiem — šauriem ekrāniem */
+@media (max-width: 600px) {
+  .wrapper,
+  .container {
+    max-width: 95%;
+    padding: 12px;
+    margin: 10px auto;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+  }
+
+  .form,
+  .group {
+    width: 100%;
+  }
+
+  .btn,
+  .addButton {
+    width: 50%;
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+  p{
+    max-width: 80%;
+  }
+   img{
+    width: 70%;
+  }
+}
+
+/* Ļoti mazi ekrāni (<400px) */
+@media (max-width: 400px) {
+  .wrapper,
+  .container {
+    max-width: 95%;
+    border-radius: 8px;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .btn,
+  .addButton {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+
+  p,
+  .description {
+    font-size: 0.85rem;
+  }
+   p{
+    max-width: 80%;
+  }
+  img{
+    width: 70%;
+  }
+ 
 }

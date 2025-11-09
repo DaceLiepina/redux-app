@@ -1,9 +1,12 @@
+* {
+  box-sizing: border-box;
+}
 .wrapper {
  display: flex;
-  flex-direction: column; /* <-- nodrošina vertikālu secību */
+  flex-direction: column; 
   align-items: center;
   justify-content: flex-start;
-  gap: 12px; /* neliela atstarpe starp elementiem */
+  gap: 12px; 
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
@@ -92,4 +95,70 @@
 .icon:hover {
   color: #1d72b8;
   transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    width:95%;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .input {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+
+  .addButton {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .actions {
+    align-self: flex-end;
+    gap: 0.4rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+  }
+  .list{
+    max-width: 90%;
+  }
+}
+
+/* Ļoti mazie ekrāni: < 400px */
+@media (max-width: 400px) {
+  .title {
+    font-size: 1.2rem;
+  }
+    .wrapper {
+    width:95%;
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .input {
+    font-size: 0.9rem;
+  }
+
+  .addButton {
+    font-size: 0.9rem;
+    padding: 6px;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
 }

@@ -4,6 +4,7 @@ import './App.css'
 import Counter from './components/counter/Counter'
 import Sandwich from './components/Sandwich/Sandwich'
 import SmartTasks from './components/tasks/SmartTasks'
+// import "./responsive.css"
 
 function App():JSX.Element {
 

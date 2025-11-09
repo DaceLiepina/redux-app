@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .container {
   display: flex;
   flex-direction: column; /* <-- nodrošina vertikālu secību */
@@ -29,4 +33,63 @@
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.25s ease, transform 0.2s ease;
+}
+@media (max-width: 900px) {
+  .wrapper,
+  .container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 16px;
+  }
+}
+
+/* Tālruņiem — šauriem ekrāniem */
+@media (max-width: 600px) {
+  .wrapper,
+  .container {
+    max-width: 95%;
+    padding: 12px;
+    margin: 10px auto;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+  }
+
+  .form,
+  .group {
+    width: 100%;
+  }
+
+  .btn,
+  .addButton {
+    width: 50%;
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+}
+
+/* Ļoti mazi ekrāni (<400px) */
+@media (max-width: 400px) {
+  .wrapper,
+  .container {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .btn,
+  .addButton {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+
+  p,
+  .description {
+    font-size: 0.85rem;
+  }
 }

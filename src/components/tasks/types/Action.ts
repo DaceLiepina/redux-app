@@ -1,7 +1,7 @@
 import type TaskCredentials from "./TaskCredentials";
 
 export type Action =
-  | { type: "tasks/add"; payload: TaskCredentials }
+  | { type: "tasks/add"; payload: TaskCredentials }  //apraksta uzdevumu, Form
   | { type: "tasks/changeStatus", payload: string }
   | { type: "tasks/remove", payload: string }; // id ir string dotaa situaacijaa
 
