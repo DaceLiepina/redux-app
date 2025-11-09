@@ -55,7 +55,7 @@ export default function TaskCreation(): JSX.Element {
   });
 
   return (
-    <div className={style.wrapper}>
+    <div className={style.wrappersmall}>
       <h1 className={style.title}>Create a task</h1>
 
       <form onSubmit={formik.handleSubmit} className={style.form}>

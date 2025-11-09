@@ -22,7 +22,8 @@
   font-weight: 600;
   margin-bottom: 1rem;
   letter-spacing: 6px;
-  color: rgb(70, 65, 65)
+  color: rgb(70, 65, 65);
+ text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.6);
 }
 .btn {
   background-color: #516474;
@@ -32,6 +33,7 @@
   border-radius: 10px;
   font-weight: 500;
   cursor: pointer;
+  box-shadow: 0 15px 12px rgba(0, 0, 0, 0.25);
   transition: background-color 0.25s ease, transform 0.2s ease;
 }
 @media (max-width: 900px) {

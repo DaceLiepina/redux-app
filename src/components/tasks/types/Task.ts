@@ -4,3 +4,4 @@ export default interface Task {
   description: string;
   isDone: boolean;
 }
+// sis ir pasam uzdevumam

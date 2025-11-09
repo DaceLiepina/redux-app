@@ -19,7 +19,7 @@ export default function Tasks(): JSX.Element {
   }
 
   return (
-  <div className={style.wrapper}>
+  <div className={style.wrappersmall}>
     <h2 className={style.title}>🗒️ Task list</h2>
 
     {tasks.length === 0 ? (

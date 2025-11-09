@@ -12,7 +12,22 @@
   padding: 20px;
   background: #a89987;
   border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.wrappersmall{
+   display: flex;
+  flex-direction: column; /* <-- nodrošina vertikālu secību */
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px; /* neliela atstarpe starp elementiem */
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #66625c;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
@@ -32,7 +47,7 @@
 }
 .empty {
   text-align: center;
-  color: #383737;
+  color: #aca5a5;
   font-style: italic;
 }
 
@@ -61,7 +76,7 @@
 
 .done .titleText {
   text-decoration: line-through;
-  color: #0f0f0f;
+  color: #af6666;
 }
 
 .textBlock {
