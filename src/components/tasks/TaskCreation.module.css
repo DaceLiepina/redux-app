@@ -75,7 +75,7 @@
 @media (max-width: 900px) {
   .wrapper,
   .container {
-    max-width: 90%;
+    max-width: 95%;
     margin: 20px auto;
     padding: 16px;
   }
