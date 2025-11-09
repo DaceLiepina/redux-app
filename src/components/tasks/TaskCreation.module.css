@@ -106,6 +106,9 @@
     font-size: 0.95rem;
     padding: 0.5rem;
   }
+  .wrappersmall{
+    width: 90%;
+  }
 }
 
 /* Ļoti mazi ekrāni (<400px) */
@@ -129,5 +132,8 @@
   p,
   .description {
     font-size: 0.85rem;
+  }
+  .wrappersmall{
+    width: 90%;
   }
 }
