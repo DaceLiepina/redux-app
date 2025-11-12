@@ -27,17 +27,17 @@ export default function DishEditForm(props: { dish: Dish }): JSX.Element {
       return false; // ja bus tuksa rinda, izleks error
     }
     if (image.trim() === '') {
-      setError('Заполните поле картинка');
+      setError('Fill in the image field');
       return false; // ja bus tuksa rinda, izleks error
     }
     if (price < 0) {
-      setError('Цена не может быть отрицательной');
+      setError('The price cannot be negative');
       return false; // ja skaitlis mazaks par 0, izleks error
     }
     return true;
   }
 
-  function resetInputsAndError(): void {
+  function resetInputsAndError(): void {  
     setCategory(dish.category);
     setTitle(dish.title);
     setPrice(dish.price);
@@ -81,7 +81,7 @@ export default function DishEditForm(props: { dish: Dish }): JSX.Element {
             value={category}
             onChange={(e) => setCategory(e.target.value)}
           >
-            <option value="" disabled>category</option>
+            <option value="" disabled>category</option> 
             <option value="main">main</option>
             <option value="dessert">dessert</option>
             <option selected value="snack">snack</option>
