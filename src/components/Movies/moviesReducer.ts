@@ -12,7 +12,30 @@ const initialState: Movie[] = [
     genre: "Drama",
     country: "USA",
     releaseDate: "1997-01-01",
+    imgUrl: "https://tse1.mm.bing.net/th/id/OIP.892k3pcvWO9Ydn91TPAmPAHaDt?pid=Api&P=0&h=180",
+    videoUrl: "https://www.youtube.com/watch?v=SfWvUjrgj9M"
   },
+  {
+    id: uid(),
+    title: "Ziemlich gute Freunde",
+    genre: "Drama",
+    country: "France",
+    releaseDate: "2011-11-02",
+    imgUrl: "https://tse1.mm.bing.net/th/id/OIP.zRMFpEEF1GquBAu-x5XgBgHaEK?pid=Api&P=0&h=180",
+    videoUrl: "https://www.youtube.com/watch?v=34WIbmXkewU"
+  },
+  {
+  id: uid(),
+  title: "Bohemian Rhapsody",
+  genre: "Biography / Drama / Music",
+  country: "UK / USA",
+  releaseDate: "2018-10-24",
+  imgUrl: "https://tse4.mm.bing.net/th/id/OIP.UCOMTFJld7ET5NExg1gPcQHaE8?pid=Api&P=0&h=180",
+  videoUrl: "https://www.youtube.com/watch?v=mP0VHJYFOAU"
+}
+  
+ 
+
 ];
 
 export function moviesReducer(state = initialState, action: Action): Movie[] {
