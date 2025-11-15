@@ -3,30 +3,28 @@ import counterReducer from "./components/counter/counterReducere";
 import sandwichReducer from "./components/Sandwich/sandwichReducer";
 import tasksReducer from "./components/tasks/tasksReducer";
 import dishesReducer from "./components/dishes/dishesReducer";
-
-
+import { moviesReducer } from "./components/Movies/moviesReducer";
 
 // import { combineReducers, createStore } from 'redux';
 // - Здесь импортируются функции combineReducers и createStore из библиотеки Redux.
 // combineReducers используется для объединения нескольких редюсеров в один,
 // а createStore используется для создания Redux-хранилища.
 
-const store = createStore(combineReducers(
-    {
-        counter: counterReducer,
-        sandwich: sandwichReducer,
-        tasks: tasksReducer,
-        dishes: dishesReducer
-    }
-));
+const store = createStore(
+  combineReducers({
+    counter: counterReducer,
+    sandwich: sandwichReducer,
+    tasks: tasksReducer,
+    dishes: dishesReducer,
+    movies: moviesReducer,
+  })
+);
 
-export default store
+export default store;
 
-export type RootState = ReturnType<typeof store.getState> 
-
+export type RootState = ReturnType<typeof store.getState>;
 
 //Rootstate - kopeejaa glabaatuve muusu Redux
-
 
 // export type RootState = ReturnType<typeof store.getState>; - Экспорт типа RootState,
 // который представляет тип состояния Redux.
