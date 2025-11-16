@@ -42,26 +42,30 @@ return (
       <button
         onClick={startEdit}
         title="Edit"
-        className="text-emerald-700 hover:text-emerald-900 transition"
+        className="text-emerald-700 hover:text-emerald-900 transition p-1 sm:p-2"
       >
-        <EditIcon />
+        <EditIcon fontSize="small"/>
       </button>
     ) : (
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 max-w-full">
         <input
-          className="p-1 border border-emerald-300 rounded-md bg-emerald-50 focus:ring-2 focus:ring-emerald-400"
+          className="p-1 sm:p-2 
+              border border-emerald-300 rounded-md bg-emerald-50 
+              focus:ring-2 focus:ring-emerald-400 text-black
+              text-sm sm:text-base
+              max-w-[120px] sm:max-w-[170px]"
           value={newTitle}
           onChange={(e) => setNewTitle(e.target.value)}
         />
         <button
           onClick={save}
-          className="px-2 py-1 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition"
+          className="px-2 py-1 sm:px-3 sm:py-1.5 bg-emerald-600 text-gray-700 rounded-lg hover:bg-emerald-700 transition"
         >
           Save
         </button>
         <button
           onClick={cancel}
-          className="px-2 py-1 bg-gray-300 text-gray-700 rounded-lg hover:bg-gray-400 transition"
+          className="px-2 py-1 sm:px-3 sm:py-1.5 bg-gray-300 text-gray-700 rounded-lg hover:bg-gray-400 transition"
         >
           Cancel
         </button>

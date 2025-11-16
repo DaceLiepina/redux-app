@@ -18,26 +18,37 @@ export const Movies: React.FC = () => {
 
   return (
     <div className="mt-10 mb-24 px-4">
-      <h3 className="text-3xl font-bold text-emerald-700 mb-5">Movies</h3>
+      <h3 className="text-xl sm:text-2xl font-bold text-emerald-700 break-words mb-4">
+        Movies
+      </h3>
 
       <ul className="grid gap-4">
         {movies.map((m) => (
           <li
             key={m.id}
-            className="relative shadow-md p-4 rounded-2xl flex gap-4 items-center 
-border border-emerald-100 bg-gradient-to-br from-cream-20 to-orange-100"
+            className="relative 
+     shadow-md p-4 rounded-2xl 
+    flex flex-col sm:flex-row 
+    gap-4 items-center sm:items-start
+    border border-emerald-100 
+    bg-gradient-to-br from-cream-20 to-orange-200
+    text-center sm:text-left
+    break-words"
           >
             <img
               src={m.imgUrl}
               alt={m.title}
-              className="w-30 h-45 object-cover rounded-xl border border-emerald-200 md:w-30 md:h-45 sm:h-32 "
+              className="w-32 h-40 
+  sm:w-36 sm:h-48 
+  object-cover 
+  rounded-xl border border-emerald-200"
             />
 
             <div className="flex flex-col justify-between flex-1">
               <div className="text-2xl font-bold text-emerald-900">
                 {m.title}
               </div>
-              <div className="text-xl text-gray-800">
+              <div className="text-lg sm:text-xl text-gray-900 break-words">
                 {m.country} • {m.genre} • {m.releaseDate}
               </div>
 
@@ -45,7 +56,7 @@ border border-emerald-100 bg-gradient-to-br from-cream-20 to-orange-100"
                 href={m.videoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-emerald-900 text-2xl underline mt-4 inline-block hover:text-emerald-800"
+                className="text-emerald-900 hover:text-emerald-400 text-lg sm:text-xl underline mt-2 sm:mt-4 inline-flex items-cente gap-1 hidden sm:inline"
               >
                 <PlayCircleOutlineIcon fontSize="medium" />
                 Watch →
